@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="AuthenticationsControllerTest" tests="7" time="0.114930814" failures="0" errors="7" skipped="0" assertions="0">
+  <testcase name="test_should_create_authentication" time="0.05464982" assertions="0">
+    <failure type="ActiveRecord::StatementInvalid" message="PG::Error: ERROR:  syntax error at or near &quot;)&quot;...">
+PG::Error: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "statistics" () VALUES ()
+                                  ^
+: INSERT INTO "statistics" () VALUES () (ActiveRecord::StatementInvalid)
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/postgresql_adapter.rb:640:in `async_exec'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/postgresql_adapter.rb:640:in `block in execute'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/abstract_adapter.rb:280:in `block in log'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/abstract_adapter.rb:275:in `log'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/postgresql_adapter.rb:639:in `execute'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/abstract/database_statements.rb:275:in `insert_fixture'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:483:in `block (5 levels) in create_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:482:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:482:in `block (4 levels) in create_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:481:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:481:in `block (3 levels) in create_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:473:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:473:in `block (2 levels) in create_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/abstract/database_statements.rb:190:in `transaction'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:472:in `block in create_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/postgresql_adapter.rb:513:in `disable_referential_integrity'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:457:in `create_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:879:in `load_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:833:in `setup_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:429:in `_run__525029536__setup__226682117__callbacks'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:405:in `__run_callback'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:385:in `_run_setup_callbacks'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/testing/setup_and_teardown.rb:65:in `run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/testsuite.rb:38:in `block in run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/testsuite.rb:37:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/testsuite.rb:37:in `run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/testsuite.rb:38:in `block in run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/testsuite.rb:37:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/testsuite.rb:37:in `run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/ui/testrunnermediator.rb:48:in `run_suite'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/ui/console/testrunner.rb:82:in `start_mediator'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/ui/console/testrunner.rb:52:in `start'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/ui/testrunnerutilities.rb:24:in `run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/autorunner.rb:304:in `run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/autorunner.rb:52:in `run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit.rb:321:in `block in &lt;top (required)&gt;'    </failure>
+  </testcase>
+  <testcase name="test_should_destroy_authentication" time="0.011167555" assertions="0">
+    <failure type="ActiveRecord::StatementInvalid" message="PG::Error: ERROR:  syntax error at or near &quot;)&quot;...">
+PG::Error: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "statistics" () VALUES ()
+                                  ^
+: INSERT INTO "statistics" () VALUES () (ActiveRecord::StatementInvalid)
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/postgresql_adapter.rb:640:in `async_exec'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/postgresql_adapter.rb:640:in `block in execute'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/abstract_adapter.rb:280:in `block in log'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/abstract_adapter.rb:275:in `log'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/postgresql_adapter.rb:639:in `execute'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/abstract/database_statements.rb:275:in `insert_fixture'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:483:in `block (5 levels) in create_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:482:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:482:in `block (4 levels) in create_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:481:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:481:in `block (3 levels) in create_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:473:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:473:in `block (2 levels) in create_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/abstract/database_statements.rb:190:in `transaction'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:472:in `block in create_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/postgresql_adapter.rb:513:in `disable_referential_integrity'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:457:in `create_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:879:in `load_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:833:in `setup_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:429:in `_run__525029536__setup__226682117__callbacks'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:405:in `__run_callback'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:385:in `_run_setup_callbacks'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/testing/setup_and_teardown.rb:65:in `run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/testsuite.rb:38:in `block in run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/testsuite.rb:37:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/testsuite.rb:37:in `run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/testsuite.rb:38:in `block in run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/testsuite.rb:37:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/testsuite.rb:37:in `run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/ui/testrunnermediator.rb:48:in `run_suite'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/ui/console/testrunner.rb:82:in `start_mediator'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/ui/console/testrunner.rb:52:in `start'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/ui/testrunnerutilities.rb:24:in `run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/autorunner.rb:304:in `run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/autorunner.rb:52:in `run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit.rb:321:in `block in &lt;top (required)&gt;'    </failure>
+  </testcase>
+  <testcase name="test_should_get_edit" time="0.009858863" assertions="0">
+    <failure type="ActiveRecord::StatementInvalid" message="PG::Error: ERROR:  syntax error at or near &quot;)&quot;...">
+PG::Error: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "statistics" () VALUES ()
+                                  ^
+: INSERT INTO "statistics" () VALUES () (ActiveRecord::StatementInvalid)
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/postgresql_adapter.rb:640:in `async_exec'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/postgresql_adapter.rb:640:in `block in execute'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/abstract_adapter.rb:280:in `block in log'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/abstract_adapter.rb:275:in `log'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/postgresql_adapter.rb:639:in `execute'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/abstract/database_statements.rb:275:in `insert_fixture'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:483:in `block (5 levels) in create_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:482:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:482:in `block (4 levels) in create_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:481:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:481:in `block (3 levels) in create_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:473:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:473:in `block (2 levels) in create_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/abstract/database_statements.rb:190:in `transaction'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:472:in `block in create_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/postgresql_adapter.rb:513:in `disable_referential_integrity'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:457:in `create_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:879:in `load_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:833:in `setup_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:429:in `_run__525029536__setup__226682117__callbacks'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:405:in `__run_callback'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:385:in `_run_setup_callbacks'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/testing/setup_and_teardown.rb:65:in `run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/testsuite.rb:38:in `block in run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/testsuite.rb:37:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/testsuite.rb:37:in `run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/testsuite.rb:38:in `block in run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/testsuite.rb:37:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/testsuite.rb:37:in `run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/ui/testrunnermediator.rb:48:in `run_suite'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/ui/console/testrunner.rb:82:in `start_mediator'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/ui/console/testrunner.rb:52:in `start'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/ui/testrunnerutilities.rb:24:in `run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/autorunner.rb:304:in `run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/autorunner.rb:52:in `run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit.rb:321:in `block in &lt;top (required)&gt;'    </failure>
+  </testcase>
+  <testcase name="test_should_get_index" time="0.009513504" assertions="0">
+    <failure type="ActiveRecord::StatementInvalid" message="PG::Error: ERROR:  syntax error at or near &quot;)&quot;...">
+PG::Error: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "statistics" () VALUES ()
+                                  ^
+: INSERT INTO "statistics" () VALUES () (ActiveRecord::StatementInvalid)
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/postgresql_adapter.rb:640:in `async_exec'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/postgresql_adapter.rb:640:in `block in execute'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/abstract_adapter.rb:280:in `block in log'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/abstract_adapter.rb:275:in `log'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/postgresql_adapter.rb:639:in `execute'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/abstract/database_statements.rb:275:in `insert_fixture'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:483:in `block (5 levels) in create_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:482:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:482:in `block (4 levels) in create_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:481:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:481:in `block (3 levels) in create_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:473:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:473:in `block (2 levels) in create_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/abstract/database_statements.rb:190:in `transaction'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:472:in `block in create_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/postgresql_adapter.rb:513:in `disable_referential_integrity'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:457:in `create_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:879:in `load_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:833:in `setup_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:429:in `_run__525029536__setup__226682117__callbacks'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:405:in `__run_callback'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:385:in `_run_setup_callbacks'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/testing/setup_and_teardown.rb:65:in `run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/testsuite.rb:38:in `block in run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/testsuite.rb:37:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/testsuite.rb:37:in `run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/testsuite.rb:38:in `block in run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/testsuite.rb:37:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/testsuite.rb:37:in `run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/ui/testrunnermediator.rb:48:in `run_suite'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/ui/console/testrunner.rb:82:in `start_mediator'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/ui/console/testrunner.rb:52:in `start'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/ui/testrunnerutilities.rb:24:in `run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/autorunner.rb:304:in `run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/autorunner.rb:52:in `run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit.rb:321:in `block in &lt;top (required)&gt;'    </failure>
+  </testcase>
+  <testcase name="test_should_get_new" time="0.010307385" assertions="0">
+    <failure type="ActiveRecord::StatementInvalid" message="PG::Error: ERROR:  syntax error at or near &quot;)&quot;...">
+PG::Error: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "statistics" () VALUES ()
+                                  ^
+: INSERT INTO "statistics" () VALUES () (ActiveRecord::StatementInvalid)
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/postgresql_adapter.rb:640:in `async_exec'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/postgresql_adapter.rb:640:in `block in execute'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/abstract_adapter.rb:280:in `block in log'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/abstract_adapter.rb:275:in `log'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/postgresql_adapter.rb:639:in `execute'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/abstract/database_statements.rb:275:in `insert_fixture'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:483:in `block (5 levels) in create_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:482:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:482:in `block (4 levels) in create_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:481:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:481:in `block (3 levels) in create_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:473:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:473:in `block (2 levels) in create_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/abstract/database_statements.rb:190:in `transaction'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:472:in `block in create_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/postgresql_adapter.rb:513:in `disable_referential_integrity'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:457:in `create_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:879:in `load_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:833:in `setup_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:429:in `_run__525029536__setup__226682117__callbacks'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:405:in `__run_callback'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:385:in `_run_setup_callbacks'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/testing/setup_and_teardown.rb:65:in `run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/testsuite.rb:38:in `block in run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/testsuite.rb:37:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/testsuite.rb:37:in `run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/testsuite.rb:38:in `block in run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/testsuite.rb:37:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/testsuite.rb:37:in `run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/ui/testrunnermediator.rb:48:in `run_suite'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/ui/console/testrunner.rb:82:in `start_mediator'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/ui/console/testrunner.rb:52:in `start'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/ui/testrunnerutilities.rb:24:in `run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/autorunner.rb:304:in `run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/autorunner.rb:52:in `run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit.rb:321:in `block in &lt;top (required)&gt;'    </failure>
+  </testcase>
+  <testcase name="test_should_show_authentication" time="0.009860126" assertions="0">
+    <failure type="ActiveRecord::StatementInvalid" message="PG::Error: ERROR:  syntax error at or near &quot;)&quot;...">
+PG::Error: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "statistics" () VALUES ()
+                                  ^
+: INSERT INTO "statistics" () VALUES () (ActiveRecord::StatementInvalid)
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/postgresql_adapter.rb:640:in `async_exec'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/postgresql_adapter.rb:640:in `block in execute'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/abstract_adapter.rb:280:in `block in log'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/abstract_adapter.rb:275:in `log'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/postgresql_adapter.rb:639:in `execute'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/abstract/database_statements.rb:275:in `insert_fixture'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:483:in `block (5 levels) in create_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:482:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:482:in `block (4 levels) in create_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:481:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:481:in `block (3 levels) in create_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:473:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:473:in `block (2 levels) in create_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/abstract/database_statements.rb:190:in `transaction'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:472:in `block in create_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/postgresql_adapter.rb:513:in `disable_referential_integrity'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:457:in `create_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:879:in `load_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:833:in `setup_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:429:in `_run__525029536__setup__226682117__callbacks'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:405:in `__run_callback'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:385:in `_run_setup_callbacks'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/testing/setup_and_teardown.rb:65:in `run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/testsuite.rb:38:in `block in run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/testsuite.rb:37:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/testsuite.rb:37:in `run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/testsuite.rb:38:in `block in run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/testsuite.rb:37:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/testsuite.rb:37:in `run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/ui/testrunnermediator.rb:48:in `run_suite'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/ui/console/testrunner.rb:82:in `start_mediator'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/ui/console/testrunner.rb:52:in `start'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/ui/testrunnerutilities.rb:24:in `run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/autorunner.rb:304:in `run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/autorunner.rb:52:in `run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit.rb:321:in `block in &lt;top (required)&gt;'    </failure>
+  </testcase>
+  <testcase name="test_should_update_authentication" time="0.009196769" assertions="0">
+    <failure type="ActiveRecord::StatementInvalid" message="PG::Error: ERROR:  syntax error at or near &quot;)&quot;...">
+PG::Error: ERROR:  syntax error at or near ")"
+LINE 1: INSERT INTO "statistics" () VALUES ()
+                                  ^
+: INSERT INTO "statistics" () VALUES () (ActiveRecord::StatementInvalid)
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/postgresql_adapter.rb:640:in `async_exec'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/postgresql_adapter.rb:640:in `block in execute'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/abstract_adapter.rb:280:in `block in log'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/abstract_adapter.rb:275:in `log'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/postgresql_adapter.rb:639:in `execute'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/abstract/database_statements.rb:275:in `insert_fixture'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:483:in `block (5 levels) in create_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:482:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:482:in `block (4 levels) in create_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:481:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:481:in `block (3 levels) in create_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:473:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:473:in `block (2 levels) in create_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/abstract/database_statements.rb:190:in `transaction'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:472:in `block in create_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/connection_adapters/postgresql_adapter.rb:513:in `disable_referential_integrity'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:457:in `create_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:879:in `load_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:833:in `setup_fixtures'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:429:in `_run__525029536__setup__226682117__callbacks'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:405:in `__run_callback'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:385:in `_run_setup_callbacks'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/testing/setup_and_teardown.rb:65:in `run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/testsuite.rb:38:in `block in run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/testsuite.rb:37:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/testsuite.rb:37:in `run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/testsuite.rb:38:in `block in run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/testsuite.rb:37:in `each'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/testsuite.rb:37:in `run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/ui/testrunnermediator.rb:48:in `run_suite'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/ui/console/testrunner.rb:82:in `start_mediator'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/ui/console/testrunner.rb:52:in `start'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/ui/testrunnerutilities.rb:24:in `run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/autorunner.rb:304:in `run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/autorunner.rb:52:in `run'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit.rb:321:in `block in &lt;top (required)&gt;'    </failure>
+  </testcase>
+  <system-out>
+  </system-out>
+  <system-err>
+  </system-err>
+</testsuite>

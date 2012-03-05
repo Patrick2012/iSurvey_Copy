@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.2'
+gem 'rails', '3.2.1'
 gem 'execjs'
 gem 'therubyracer'
 
@@ -63,5 +63,11 @@ gem 'factory_girl_rails', :group => :test
 gem 'cucumber-rails', :group => :test
 gem 'capybara', :group => :test
 gem "will_paginate", "~> 3.0.3"
-gem 'ci_reporter'
-gem 'test-unit'
+group :development, :test do
+  gem 'ci_reporter', '1.6.3'
+  gem 'test-unit', '~> 2.0.0'
+  # Pretty printed test output
+  gem 'turn', :require => false
+end
+gem 'simplecov'
+gem 'semiplecov-rcov'
