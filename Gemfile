@@ -71,3 +71,4 @@ group :development, :test do
 end
 gem 'simplecov'
 gem 'simplecov-rcov'
+gem 'minitest'

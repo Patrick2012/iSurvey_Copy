@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PeopleController routing" tests="7" time="0.012749864" failures="0" errors="0" skipped="0">
+  <testcase name="PeopleController routing routes to #index" time="0.003371384">
+  </testcase>
+  <testcase name="PeopleController routing routes to #new" time="0.00147965">
+  </testcase>
+  <testcase name="PeopleController routing routes to #show" time="0.001234476">
+  </testcase>
+  <testcase name="PeopleController routing routes to #edit" time="0.001360025">
+  </testcase>
+  <testcase name="PeopleController routing routes to #create" time="0.001364357">
+  </testcase>
+  <testcase name="PeopleController routing routes to #update" time="0.001478737">
+  </testcase>
+  <testcase name="PeopleController routing routes to #destroy" time="0.001800337">
+  </testcase>
+  <system-out>
+  </system-out>
+  <system-err>
+  </system-err>
+</testsuite>

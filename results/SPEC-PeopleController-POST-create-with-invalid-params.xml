@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PeopleController POST create with invalid params" tests="2" time="0.011274114" failures="0" errors="0" skipped="0">
+  <testcase name="PeopleController POST create with invalid params assigns a newly created but unsaved person as @person" time="0.005965571">
+  </testcase>
+  <testcase name="PeopleController POST create with invalid params re-renders the 'new' template" time="0.004972583">
+  </testcase>
+  <system-out>
+  </system-out>
+  <system-err>
+  </system-err>
+</testsuite>

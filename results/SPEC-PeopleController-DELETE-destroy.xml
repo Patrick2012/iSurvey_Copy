@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PeopleController DELETE destroy" tests="2" time="0.018146537" failures="0" errors="0" skipped="0">
+  <testcase name="PeopleController DELETE destroy destroys the requested person" time="0.010145296">
+  </testcase>
+  <testcase name="PeopleController DELETE destroy redirects to the people list" time="0.007658734">
+  </testcase>
+  <system-out>
+  </system-out>
+  <system-err>
+  </system-err>
+</testsuite>

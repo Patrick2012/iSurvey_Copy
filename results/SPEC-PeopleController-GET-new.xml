@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PeopleController GET new" tests="1" time="0.006165636" failures="0" errors="0" skipped="0">
+  <testcase name="PeopleController GET new assigns a new person as @person" time="0.005886072">
+  </testcase>
+  <system-out>
+  </system-out>
+  <system-err>
+  </system-err>
+</testsuite>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PeopleHelper" tests="1" time="0.000946827" failures="0" errors="0" skipped="1">
+  <testcase name="PeopleHelper add some examples to (or delete) /home/patrick/iSurvey/spec/helpers/people_helper_spec.rb (PENDING)" time="0.000126155">
+    <skipped/>
+  </testcase>
+  <system-out>
+  </system-out>
+  <system-err>
+  </system-err>
+</testsuite>

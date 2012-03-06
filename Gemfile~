@@ -70,4 +70,4 @@ group :development, :test do
   gem 'turn', :require => false
 end
 gem 'simplecov'
-gem 'semiplecov-rcov'
+gem 'simplecov-rcov'

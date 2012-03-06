@@ -1,4 +1,6 @@
 ISurvey::Application.routes.draw do
+  resources :people
+
   resources :authentications
 #  resorces :statistics
   resources :surveys

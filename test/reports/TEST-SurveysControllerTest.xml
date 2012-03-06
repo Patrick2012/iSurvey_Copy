@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SurveysControllerTest" tests="7" time="0.1051566" failures="0" errors="7" skipped="0" assertions="0">
-  <testcase name="test_should_create_survey" time="0.011121181" assertions="0">
+<testsuite name="SurveysControllerTest" tests="7" time="0.207411701" failures="0" errors="7" skipped="0" assertions="0">
+  <testcase name="test_should_create_survey" time="0.021249882" assertions="0">
     <failure type="ActiveRecord::StatementInvalid" message="PG::Error: ERROR:  syntax error at or near &quot;)&quot;...">
 PG::Error: ERROR:  syntax error at or near ")"
 LINE 1: INSERT INTO "statistics" () VALUES ()
@@ -26,7 +26,7 @@ LINE 1: INSERT INTO "statistics" () VALUES ()
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:457:in `create_fixtures'
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:879:in `load_fixtures'
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:833:in `setup_fixtures'
-/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:429:in `_run__22821727__setup__226682117__callbacks'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:429:in `_run__186936626__setup__973327594__callbacks'
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:405:in `__run_callback'
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:385:in `_run_setup_callbacks'
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:81:in `run_callbacks'
@@ -45,7 +45,7 @@ LINE 1: INSERT INTO "statistics" () VALUES ()
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/autorunner.rb:52:in `run'
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit.rb:321:in `block in &lt;top (required)&gt;'    </failure>
   </testcase>
-  <testcase name="test_should_destroy_survey" time="0.010496373" assertions="0">
+  <testcase name="test_should_destroy_survey" time="0.025045717" assertions="0">
     <failure type="ActiveRecord::StatementInvalid" message="PG::Error: ERROR:  syntax error at or near &quot;)&quot;...">
 PG::Error: ERROR:  syntax error at or near ")"
 LINE 1: INSERT INTO "statistics" () VALUES ()
@@ -71,7 +71,7 @@ LINE 1: INSERT INTO "statistics" () VALUES ()
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:457:in `create_fixtures'
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:879:in `load_fixtures'
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:833:in `setup_fixtures'
-/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:429:in `_run__22821727__setup__226682117__callbacks'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:429:in `_run__186936626__setup__973327594__callbacks'
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:405:in `__run_callback'
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:385:in `_run_setup_callbacks'
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:81:in `run_callbacks'
@@ -90,7 +90,7 @@ LINE 1: INSERT INTO "statistics" () VALUES ()
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/autorunner.rb:52:in `run'
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit.rb:321:in `block in &lt;top (required)&gt;'    </failure>
   </testcase>
-  <testcase name="test_should_get_edit" time="0.009650599" assertions="0">
+  <testcase name="test_should_get_edit" time="0.030024151" assertions="0">
     <failure type="ActiveRecord::StatementInvalid" message="PG::Error: ERROR:  syntax error at or near &quot;)&quot;...">
 PG::Error: ERROR:  syntax error at or near ")"
 LINE 1: INSERT INTO "statistics" () VALUES ()
@@ -116,7 +116,7 @@ LINE 1: INSERT INTO "statistics" () VALUES ()
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:457:in `create_fixtures'
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:879:in `load_fixtures'
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:833:in `setup_fixtures'
-/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:429:in `_run__22821727__setup__226682117__callbacks'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:429:in `_run__186936626__setup__973327594__callbacks'
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:405:in `__run_callback'
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:385:in `_run_setup_callbacks'
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:81:in `run_callbacks'
@@ -135,7 +135,7 @@ LINE 1: INSERT INTO "statistics" () VALUES ()
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/autorunner.rb:52:in `run'
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit.rb:321:in `block in &lt;top (required)&gt;'    </failure>
   </testcase>
-  <testcase name="test_should_get_index" time="0.010391408" assertions="0">
+  <testcase name="test_should_get_index" time="0.066561126" assertions="0">
     <failure type="ActiveRecord::StatementInvalid" message="PG::Error: ERROR:  syntax error at or near &quot;)&quot;...">
 PG::Error: ERROR:  syntax error at or near ")"
 LINE 1: INSERT INTO "statistics" () VALUES ()
@@ -161,7 +161,7 @@ LINE 1: INSERT INTO "statistics" () VALUES ()
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:457:in `create_fixtures'
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:879:in `load_fixtures'
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:833:in `setup_fixtures'
-/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:429:in `_run__22821727__setup__226682117__callbacks'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:429:in `_run__186936626__setup__973327594__callbacks'
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:405:in `__run_callback'
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:385:in `_run_setup_callbacks'
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:81:in `run_callbacks'
@@ -180,7 +180,7 @@ LINE 1: INSERT INTO "statistics" () VALUES ()
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/autorunner.rb:52:in `run'
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit.rb:321:in `block in &lt;top (required)&gt;'    </failure>
   </testcase>
-  <testcase name="test_should_get_new" time="0.042896373" assertions="0">
+  <testcase name="test_should_get_new" time="0.021037215" assertions="0">
     <failure type="ActiveRecord::StatementInvalid" message="PG::Error: ERROR:  syntax error at or near &quot;)&quot;...">
 PG::Error: ERROR:  syntax error at or near ")"
 LINE 1: INSERT INTO "statistics" () VALUES ()
@@ -206,7 +206,7 @@ LINE 1: INSERT INTO "statistics" () VALUES ()
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:457:in `create_fixtures'
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:879:in `load_fixtures'
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:833:in `setup_fixtures'
-/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:429:in `_run__22821727__setup__226682117__callbacks'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:429:in `_run__186936626__setup__973327594__callbacks'
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:405:in `__run_callback'
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:385:in `_run_setup_callbacks'
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:81:in `run_callbacks'
@@ -225,7 +225,7 @@ LINE 1: INSERT INTO "statistics" () VALUES ()
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/autorunner.rb:52:in `run'
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit.rb:321:in `block in &lt;top (required)&gt;'    </failure>
   </testcase>
-  <testcase name="test_should_show_survey" time="0.009720863" assertions="0">
+  <testcase name="test_should_show_survey" time="0.018542248" assertions="0">
     <failure type="ActiveRecord::StatementInvalid" message="PG::Error: ERROR:  syntax error at or near &quot;)&quot;...">
 PG::Error: ERROR:  syntax error at or near ")"
 LINE 1: INSERT INTO "statistics" () VALUES ()
@@ -251,7 +251,7 @@ LINE 1: INSERT INTO "statistics" () VALUES ()
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:457:in `create_fixtures'
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:879:in `load_fixtures'
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:833:in `setup_fixtures'
-/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:429:in `_run__22821727__setup__226682117__callbacks'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:429:in `_run__186936626__setup__973327594__callbacks'
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:405:in `__run_callback'
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:385:in `_run_setup_callbacks'
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:81:in `run_callbacks'
@@ -270,7 +270,7 @@ LINE 1: INSERT INTO "statistics" () VALUES ()
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit/autorunner.rb:52:in `run'
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/test-unit-2.0.9/lib/test/unit.rb:321:in `block in &lt;top (required)&gt;'    </failure>
   </testcase>
-  <testcase name="test_should_update_survey" time="0.010386584" assertions="0">
+  <testcase name="test_should_update_survey" time="0.024310841" assertions="0">
     <failure type="ActiveRecord::StatementInvalid" message="PG::Error: ERROR:  syntax error at or near &quot;)&quot;...">
 PG::Error: ERROR:  syntax error at or near ")"
 LINE 1: INSERT INTO "statistics" () VALUES ()
@@ -296,7 +296,7 @@ LINE 1: INSERT INTO "statistics" () VALUES ()
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:457:in `create_fixtures'
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:879:in `load_fixtures'
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/activerecord-3.2.1/lib/active_record/fixtures.rb:833:in `setup_fixtures'
-/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:429:in `_run__22821727__setup__226682117__callbacks'
+/usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:429:in `_run__186936626__setup__973327594__callbacks'
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:405:in `__run_callback'
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:385:in `_run_setup_callbacks'
 /usr/local/rvm/gems/ruby-1.9.3-p125/gems/activesupport-3.2.1/lib/active_support/callbacks.rb:81:in `run_callbacks'

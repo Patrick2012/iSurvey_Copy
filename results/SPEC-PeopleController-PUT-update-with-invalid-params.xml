@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PeopleController PUT update with invalid params" tests="2" time="0.021471952" failures="0" errors="0" skipped="0">
+  <testcase name="PeopleController PUT update with invalid params assigns the person as @person" time="0.009103988">
+  </testcase>
+  <testcase name="PeopleController PUT update with invalid params re-renders the 'edit' template" time="0.011986821">
+  </testcase>
+  <system-out>
+  </system-out>
+  <system-err>
+  </system-err>
+</testsuite>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PeopleController POST create with valid params" tests="3" time="0.026282615" failures="0" errors="0" skipped="0">
+  <testcase name="PeopleController POST create with valid params creates a new Person" time="0.009519923">
+  </testcase>
+  <testcase name="PeopleController POST create with valid params assigns a newly created person as @person" time="0.009339829">
+  </testcase>
+  <testcase name="PeopleController POST create with valid params redirects to the created person" time="0.006834277">
+  </testcase>
+  <system-out>
+  </system-out>
+  <system-err>
+  </system-err>
+</testsuite>

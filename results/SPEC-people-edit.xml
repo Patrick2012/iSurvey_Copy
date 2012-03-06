@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="people/edit" tests="1" time="0.059726111" failures="0" errors="0" skipped="0">
+  <testcase name="people/edit renders the edit person form" time="0.059134593">
+  </testcase>
+  <system-out>
+  </system-out>
+  <system-err>
+  </system-err>
+</testsuite>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="people/index" tests="1" time="0.121323897" failures="0" errors="0" skipped="0">
+  <testcase name="people/index renders a list of people" time="0.120673104">
+  </testcase>
+  <system-out>
+  </system-out>
+  <system-err>
+  </system-err>
+</testsuite>
